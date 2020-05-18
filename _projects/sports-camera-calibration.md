@@ -1,0 +1,18 @@
+---
+title: "Awesome Sports Camera Calibration"
+excerpt: "A collection of resources on automatic self-calibration of cameras in sports applications."
+date: "10.05.2020"
+header:
+    image: /assets/images/sports-camera.jpg
+    teaser: /assets/images/sports-camera.jpg
+---
+
+In my [GitHub repository](https://github.com/cemunds/awesome-sports-camera-calibration) I started collecting links to papers and datasets that are concerned with automatic self-calibration of cameras in sports scenarios. When I got in contact with this topic a few months ago, I was surprised to see that this is actually a pretty big area of active research. Reading through the papers, researchers don't seem to have agreed upon a common benchmark for their systems and proofs of concept, yet. Many papers were released together with new real-life or even synthetic datasets, often times using different metrics to evaluate their performance. This makes the comparison between the different approaches difficult.
+
+Without having implemented the method myself yet, I find the approach by [Graham Thomas](https://www.researchgate.net/publication/220243595_Real-time_camera_tracking_using_sports_pitch_markings) to be quite interesting. It uses more conventional computer vision algorithms like Hough transform, line detection filters, and Levenberg-Marquardt optimization to implement a system that is able to track the camera pose in real-time.
+
+I enjoyed reading the paper by [Chen et al.](http://openaccess.thecvf.com/content_CVPRW_2019/papers/CVSports/Chen_Sports_Camera_Calibration_via_Synthetic_Data_CVPRW_2019_paper.pdf) and experimenting with their code (which is split into two repositories [here](https://github.com/lood339/SCCvSD) and [here](https://github.com/lood339/pytorch-two-GAN). They combine two pix2pix Generative Adversarial Networks (GAN) to create an edge image of the play field given an input image of a TV sports camera. They then use a Siamese Network that was trained on purely synthetic data to compress the obtained edge image into a dense feature vector of small dimensionality. For this feature vector, they find the nearest neighbor in a database that maps feature vectors to sets of camera parameters. This database they created during the preprocessing phase by generating edge images of a play field with different sets of camera parameters and running these through the Siamese Network to extract their features. The final phase consists of an adjustment step that further refines the retrieved camera parameters via an optimization process until the distance between the edges of the image obtained from the GANs and the edges of the synthetic edge image is minimal.
+
+Many publications leave out the factor of camera distortion completely or only touch it briefly, which is why is also included a few papers on how to deal with lens distortion in my collection.
+
+I will update this article as well as the [GitHub repository](https://github.com/cemunds/awesome-sports-camera-calibration) as new papers on this interesting topic become available.
