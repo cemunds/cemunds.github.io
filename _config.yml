@@ -55,7 +55,7 @@ plugins:
 author:
   name   : "Christoph Emunds"
   avatar : "/assets/images/profile-picture.jpg"
-  bio    : "M.Sc. Artificial Intelligence, Software Development Engineer."
+  bio    : "M.Sc. Artificial Intelligence, Software Engineer and Deep Learning enthusiast."
   location: "Aachen, Germany"
   links:
     - label: "Mail"
