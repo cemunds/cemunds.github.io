@@ -6,7 +6,7 @@ header:
   image: /assets/images/home-wallpaper2.jpg
   caption: "Photo by [**NASA**](https://unsplash.com/@nasa)"
 welcome_message:
-  - excerpt: "I'm a software engineer from Germany with a M.Sc. in Artificial Intelligence, specializing on Deep Learning applications. I started this blog in March 2020 to keep practicing my writing skills and to serve as my personal reference. Writing also allows me to build a deeper understanding of the topics I write about, and ideally my articles may even help or inspire someone else out there."
+  - excerpt: "I'm a software engineer from Germany with a M.Sc. in Artificial Intelligence, specializing on Deep Learning applications. I started this blog in March 2020 to keep practicing my writing skills and to serve as my personal reference. Writing also allows me to gain a deeper understanding of the topics I write about, and ideally my articles may even help or inspire someone else out there."
 featured_posts:
   - image_path: assets/images/locality-sensitive-hashing.png
     title: "Locality-Sensitive Hashing for Image Deduplication"
