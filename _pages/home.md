@@ -20,6 +20,12 @@ featured_posts:
     url: "/posts/data-science-curriculum"
     btn_label: "Read More"
     btn_class: "btn--primary"
+  - image_path: assets/images/optimizers-teaser.png
+    title: "Neural Network Optimization Algorithms Explained with Code"
+    excerpt: "An overview of common optimizers for training neural networks with code."
+    url: "/posts/neural-net-optimizers"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
 featured_projects:
   - image_path: assets/images/sports-camera.jpg
     title: "Awesome Sports Camera Calibration"
