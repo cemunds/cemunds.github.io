@@ -73,6 +73,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "XING"
+      icon: "fab fa-fw fa-xing"
+      url: "https://www.xing.com/profile/Christoph_Emunds"
 
 footer:
   links:
@@ -85,6 +88,9 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "XING"
+      icon: "fab fa-fw fa-xing"
+      url: "https://www.xing.com/profile/Christoph_Emunds"
 
 category_archive:
   type: liquid
